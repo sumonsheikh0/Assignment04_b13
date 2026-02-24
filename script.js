@@ -126,13 +126,14 @@ allJobSection.addEventListener('click', function (event) {
   }
 
   
-  if (event.target.innerText === "delete") {
+  if (event.target.closest('.delete-btn')) {
 
-    interviewCount = interviewCount.filter(item => item !== jobHeading);
-    rejectedCount = rejectedCount.filter(item => item !== jobHeading);
+  interviewCount = interviewCount.filter(item => item !== jobHeading);
+  rejectedCount = rejectedCount.filter(item => item !== jobHeading);
 
-    card.remove();
-  }
+  card.remove();
+
+}
 
   updateCounter();
   checkEmpty();

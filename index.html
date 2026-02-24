@@ -12,9 +12,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  
+
 </head>
 
 <body>
@@ -54,7 +56,8 @@
       <div id="empty-message" class="hidden text-center text-gray-500 mt-6">
         No Jobs Available
       </div>
-      <div id="post" class="job-card flex justify-between items-start bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+      <div id="post"
+        class="job-card flex justify-between items-start bg-white p-6 rounded-xl shadow-sm border border-gray-200">
 
         <div id="job-info" class="space-y-4">
 
@@ -92,26 +95,27 @@
 
         </div>
 
-        <div id="delete-btn" class="text-gray-400 hover:text-red-500 cursor-pointer text-sm">
-          delete
+        <div class="delete-btn text-gray-400 hover:text-red-500 cursor-pointer">
+          <i class="fa-solid fa-trash-can"></i>
         </div>
 
       </div>
-      <div id="empty-state" class="hidden flex flex-col items-center justify-center py-20 bg-gray-50 rounded-xl border border-gray-200">
-  
-  <div >
-    <i class="fa-solid fa-file-lines text-blue-400 text-6xl"></i>
-  </div>
+      <div id="empty-state"
+        class="hidden flex flex-col items-center justify-center py-20 bg-gray-50 rounded-xl border border-gray-200">
 
-  <h2 class="text-2xl font-bold text-blue-900 mt-6">
-    No jobs available
-  </h2>
+        <div>
+          <i class="fa-solid fa-file-lines text-blue-400 text-6xl"></i>
+        </div>
 
-  <p class="text-gray-500 mt-2">
-    Check back soon for new job opportunities
-  </p>
+        <h2 class="text-2xl font-bold text-blue-900 mt-6">
+          No jobs available
+        </h2>
 
-</div>
+        <p class="text-gray-500 mt-2">
+          Check back soon for new job opportunities
+        </p>
+
+      </div>
     </section>
   </main>
   <script src="script.js"></script>
