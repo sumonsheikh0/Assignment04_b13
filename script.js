@@ -24,14 +24,19 @@ function updateCounter() {
 
 
 
-function checkEmpty() {
-  const totalJobs = document.querySelectorAll('.job-card').length;
+function checkEmptyState() {
 
-  if (totalJobs === 0) {
-    emptyMessage.classList.remove('hidden');
+  const cards = document.querySelectorAll('.job-card');
+  const visibleCards = [...cards].filter(card => card.style.display !== "none");
+
+  const emptyState = document.getElementById('empty-state');
+
+  if (visibleCards.length === 0) {
+    emptyState.classList.remove('hidden');
   } else {
-    emptyMessage.classList.add('hidden');
+    emptyState.classList.add('hidden');
   }
+
 }
 
 
@@ -65,6 +70,7 @@ function filterJobs(type) {
     }
 
   });
+   checkEmptyState();
 
 }
 
@@ -135,4 +141,4 @@ allJobSection.addEventListener('click', function (event) {
 
 
 updateCounter();
-checkEmpty();
+checkEmptyState();  
