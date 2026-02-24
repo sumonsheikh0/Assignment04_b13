@@ -37,12 +37,12 @@
   <main class="max-w-[1100px] mx-auto p-6 ">
     <h2 class="text-2xl font-bold">Available Jobs</h2>
     <div div="filter-btn-section" class="mt-5">
-      <button id="all-filter-btn"
+      <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn"
         class="bg-blue-500 text-white px-7 py-1 border border-gray-200 rounded-sm font-semibold">
         All</button>
-      <button id="interview-filter-btn" class="px-7 py-1 border border-gray-200 rounded-sm font-semibold">
+      <button onclick="toggleStyle('interview-filter-btn')" id="interview-filter-btn" class="px-7 py-1 border border-gray-200 rounded-sm font-semibold">
         Interview</button>
-      <button id="rejected-filter-btn" class="px-7 py-1  border border-gray-200 rounded-sm font-semibold">
+      <button onclick="toggleStyle('rejected-filter-btn')" id="rejected-filter-btn" class="px-7 py-1  border border-gray-200 rounded-sm font-semibold">
         Rejected</button>
     </div>
     <section id="jobs" class="mt-10 max-w-[1100px] mx-auto space-y-6 ">
