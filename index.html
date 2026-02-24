@@ -22,8 +22,8 @@
 <body>
   <!--Counter section-->
   <header id="main-manu" class="max-w-[1100px] mx-auto px-4 p-6 text-gray-700">
-    <h1 class="text-5xl font-bold">Job Application Tracker</h1>
-    <div id="counter-manu" class="grid grid-cols-3 gap-5">
+    <h1 class=" text-3xl md:text-5xl font-bold">Job Application Tracker</h1>
+    <div id="counter-manu" class="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-3 gap-5 ">
       <div id="total-count" class="border border-gray-300 rounded p-5 mt-5">
         <p>Total</p>
         <span id="all-number" class="text-3xl font-bold">0</span>
@@ -42,7 +42,7 @@
   <main class="max-w-[1100px] mx-auto p-6 ">
     <h2 class="text-2xl font-bold">Available Jobs</h2>
     <!--filter section-->
-    <div div="filter-btn-section" class="mt-5">
+    <div id="filter-btn-section " class=" mt-5 flex justify-start items-center gap-3 flex-wrap ">
       <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn"
         class="bg-blue-500 text-white px-7 py-1 border border-gray-200 rounded-sm font-semibold">
         All</button>
@@ -66,10 +66,10 @@
             <span class="job-about text-gray-500">React Native Developer</span>
           </div>
 
-          <ul id="job-condition" class="flex items-center text-gray-500 text-sm space-x-6">
+          <ul id="job-condition" class="flex flex-wrap items-center text-gray-500 text-sm space-x-6">
             <li class="work-place list-none">Remote</li>
-            <li class="working-hour list-disc">Full-time</li>
-            <li class="salary list-disc">$130,000 - $175,000</li>
+            <li class="working-hour ">Full-time</li>
+            <li class="salary">$130,000 - $175,000</li>
           </ul>
 
           <button id="tag-btn" class="job-staus bg-blue-50 text-blue-700 text-sm font-medium px-4 py-1 rounded-md">
@@ -112,10 +112,10 @@
             <span class="job-about text-gray-500">Web Designer & Developer</span>
           </div>
 
-          <ul id="job-condition" class="flex items-center text-gray-500 text-sm space-x-6">
-            <li class="work-place list-none">Los Angeles, CA</li>
-            <li class="working-hour list-disc">Part-time</li>
-            <li class="salary list-disc">$80,000 - $120,000</li>
+          <ul id="job-condition" class="flex flex-wrap items-center text-gray-500 text-sm space-x-6">
+            <li class="work-place ">Los Angeles, CA</li>
+            <li class="working-hour ">Part-time</li>
+            <li class="salary ">$80,000 - $120,000</li>
           </ul>
 
           <button id="tag-btn" class="job-staus bg-blue-50 text-blue-700 text-sm font-medium px-4 py-1 rounded-md">
@@ -156,10 +156,10 @@
             <span class="job-about text-gray-500">Data Visualization Specialist</span>
           </div>
 
-          <ul id="job-condition" class="flex items-center text-gray-500 text-sm space-x-6">
-            <li class="work-place list-none">Boston, MA </li>
-            <li class="working-hour list-disc">Full-time</li>
-            <li class="salary list-disc">$125,000 - $165,000</li>
+          <ul id="job-condition" class="flex flex-wrap items-center text-gray-500 text-sm space-x-6">
+            <li class="work-place">Boston, MA </li>
+            <li class="working-hour">Full-time</li>
+            <li class="salary">$125,000 - $165,000</li>
           </ul>
 
           <button id="tag-btn" class="job-staus bg-blue-50 text-blue-700 text-sm font-medium px-4 py-1 rounded-md">
@@ -200,10 +200,10 @@
             <span class="job-about text-gray-500">Backend Developer</span>
           </div>
 
-          <ul id="job-condition" class="flex items-center text-gray-500 text-sm space-x-6">
-            <li class="work-place list-none">Seattle, WA</li>
-            <li class="working-hour list-disc">Full-time</li>
-            <li class="salary list-disc">$140,000 - $190,000</li>
+          <ul id="job-condition" class="flex flex-wrap items-center text-gray-500 text-sm space-x-6">
+            <li class="work-place ">Seattle, WA</li>
+            <li class="working-hour ">Full-time</li>
+            <li class="salary ">$140,000 - $190,000</li>
           </ul>
 
           <button id="tag-btn" class="job-staus bg-blue-50 text-blue-700 text-sm font-medium px-4 py-1 rounded-md">
@@ -244,10 +244,10 @@
             <span class="job-about text-gray-500">UI/UX Engineer</span>
           </div>
 
-          <ul id="job-condition" class="flex items-center text-gray-500 text-sm space-x-6">
-            <li class="work-place list-none">Austin, TX</li>
-            <li class="working-hour list-disc">Full-time</li>
-            <li class="salary list-disc">$110,000 - $150,000</li>
+          <ul id="job-condition" class="flex flex-wrap items-center text-gray-500 text-sm space-x-6">
+            <li class="work-place ">Austin, TX</li>
+            <li class="working-hour ">Full-time</li>
+            <li class="salary ">$110,000 - $150,000</li>
           </ul>
 
           <button id="tag-btn" class="job-staus bg-blue-50 text-blue-700 text-sm font-medium px-4 py-1 rounded-md">
@@ -288,10 +288,10 @@
             <span class="job-about text-gray-500">JavaScript Developer</span>
           </div>
 
-          <ul id="job-condition" class="flex items-center text-gray-500 text-sm space-x-6">
-            <li class="work-place list-none">New York, NY</li>
-            <li class="working-hour list-disc">Full-time</li>
-            <li class="salary list-disc">$130,000 - $170,00</li>
+          <ul id="job-condition" class="flex flex-wrap items-center text-gray-500 text-sm space-x-6">
+            <li class="work-place ">New York, NY</li>
+            <li class="working-hour ">Full-time</li>
+            <li class="salary ">$130,000 - $170,00</li>
           </ul>
 
           <button id="tag-btn" class="job-staus bg-blue-50 text-blue-700 text-sm font-medium px-4 py-1 rounded-md">
@@ -332,10 +332,10 @@
             <span class="job-about text-gray-500">Full Stack Engineer</span>
           </div>
 
-          <ul id="job-condition" class="flex items-center text-gray-500 text-sm space-x-6">
-            <li class="work-place list-none">Remote</li>
-            <li class="working-hour list-disc">Full-time</li>
-            <li class="salary list-disc">Full Stack Engineer</li>
+          <ul id="job-condition" class="flex flex-wrap items-center text-gray-500 text-sm space-x-6">
+            <li class="work-place">Remote</li>
+            <li class="working-hour ">Full-time</li>
+            <li class="salary ">Full Stack Engineer</li>
           </ul>
 
           <button id="tag-btn" class="job-staus bg-blue-50 text-blue-700 text-sm font-medium px-4 py-1 rounded-md">
@@ -376,10 +376,10 @@
             <span class="job-about text-gray-500">Senior Frontend Developer</span>
           </div>
 
-          <ul id="job-condition" class="flex items-center text-gray-500 text-sm space-x-6">
-            <li class="work-place list-none">San Francisco, CA</li>
-            <li class="working-hour list-disc">Full-time</li>
-            <li class="salary list-disc">$130,000 - $175,000</li>
+          <ul id="job-condition" class="flex flex-wrap items-center text-gray-500 text-sm space-x-6">
+            <li class="work-place ">San Francisco, CA</li>
+            <li class="working-hour ">Full-time</li>
+            <li class="salary ">$130,000 - $175,000</li>
           </ul>
 
           <button id="tag-btn" class="job-staus bg-blue-50 text-blue-700 text-sm font-medium px-4 py-1 rounded-md">
